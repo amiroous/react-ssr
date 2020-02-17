@@ -78,11 +78,14 @@ The Backend Application would be Broken to 2 Separated Apps:
 - Needs State Re-Hydration on the Client Side (Browser)
 
 
+1. Create Store (In Index File where We Render HTML by ReactDOM to DOM):
+    - createStore
+    - applyMiddleware(thunk)
+    - Set Provider with the Store and wrap Component in it
 
-
-
-
-
+2. Create Action Creators (Make Ajax Calls, ....  and Return an Action Object)
+3. Create Reducers (Receive Action, Update State and Return new State)
+4. Call Action Creator in Component
 
 
 
