@@ -38,4 +38,55 @@ The Backend Application would be Broken to 2 Separated Apps:
 > Render Data
 - Take Data and Render HTML
 
+----
+
+## Terminology
+- Server Side Rendering (Generate HTML Code on the Server)
+- Universal Javascript (Same code runs on the server and the browser)
+- Isomorphic Javascript (Same code runs on the server and the browser)
+
+----
+
+## React Challenges on SSR React
+- Running JSX on the Server
+    > Run Webpack on all of our server side codes, then execute the resulting bundle
+
+- React Component to HTML Code
+    > Use the `react-dom/server` libraries and use `renderToString` function
+
+- Reflect Changes to Browser (Live Reload)
+    > Update Code, Rerun Webpack on Server, Restart Server
+
+- Router on Server and on Client Side
+    >* on Server Use StaticRouter
+    >* on Client Use BrowserRouter
+
+### ReactDOM [#](https://reactjs.org/docs/react-dom.html)
+
+#### `render`
+> Render a React element into the DOM in the supplied container and return a reference to the component
+
+#### `renderToString`
+> Render a React element to its initial HTML. React will return an HTML string.
+
+----
+
+### Redux Challenges on SSR React
+- Redux Needs Different Configuration on Server and Client (Browser)
+- Authentication Needs to be in Server (Cookie Based Authentication)
+- Needs a Way to Detect when All Initial Data Loads by Action Creators are Completed on Server
+- Needs State Re-Hydration on the Client Side (Browser)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
